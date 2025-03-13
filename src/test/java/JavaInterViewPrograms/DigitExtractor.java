@@ -2,7 +2,7 @@ package JavaInterViewPrograms;
 
 public class DigitExtractor {
     public static void main(String args[]) {
-        int num=123456;
+        int num=1256;
         int digit;
         while(num!=0)
         {
