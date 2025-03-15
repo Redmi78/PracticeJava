@@ -9,5 +9,6 @@ public class ReverseString {
             rev=rev + str.charAt(i);
         }
         System.out.println(rev);
+        System.out.println(new StringBuffer(str).reverse());
     }
 }
