@@ -11,15 +11,15 @@ public class ReverseEachWordInaString {
 
         // Create a HashMap to store the reversed version of each word
         HashMap<Integer, String> reversedWordsMap = new HashMap<>();
-
+        String reversedWord = "";
         // Reverse each word and store it in the HashMap
         for (int i = 0; i < words.length; i++) {
             String word = words[i];
-            String reversedWord = "";
+
 
             // Reverse the current word without using any methods
             for (int j = word.length() - 1; j >= 0; j--) {
-                reversedWord =reversedWord+word.charAt(j);
+                reversedWord = reversedWord + word.charAt(j);
             }
 
             // Store the reversed word in the HashMap
@@ -28,7 +28,6 @@ public class ReverseEachWordInaString {
         for (int i = 0; i < words.length; i++) {
             System.out.print(reversedWordsMap.get(i) + " ");
         }
-
 
     }
 }
