@@ -19,5 +19,7 @@ public class Streams {
         }*/
        long C= names.stream().filter(s -> s.startsWith("R")).count();
         System.out.println(C);
+
+
     }
 }
