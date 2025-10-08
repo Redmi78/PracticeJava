@@ -5,24 +5,21 @@ import java.util.Map;
 
 public class countOccurence {
         public static void main(String[] args) {
-        String str = "Hello";
-        Map<Character, Integer> map = new HashMap<>();
-        char[] words = str.toCharArray();
-        int count = 1;
-        for(int i=0;i<words.length;i++)
-        {
-            if(!map.containsKey(words[i]))
-            {
-                map.put(words[i], count);
+        String str = "Madam";
+        Map<Character,Integer> map = new HashMap<>();
+            char[] countCharacters=  str.toCharArray();
+            for(char c: countCharacters) {
+               if(map.containsKey(c))
+               {
+                   map.put(c,map.get(c)+1);
+               }
+               else {
+                     map.put(c,1);
+               }
             }
-            else
-            {
-                map.put(words[i], map.get(words[i]) + 1);
+            for(Map.Entry<Character, Integer> entry : map.entrySet()) {
+                System.out.println("Character: " + entry.getKey() + ", Count: " + entry.getValue());
             }
-        }
 
-        for (Character key : map.keySet()) {
-            System.out.println("Character: " + key + ", Count: " + map.get(key));
-        }
     }
 }
