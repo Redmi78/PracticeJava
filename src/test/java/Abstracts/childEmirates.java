@@ -6,6 +6,7 @@ public class childEmirates extends parentAirCraft {
         c.takeOff();
         c.fly();
         c.land();
+
     }
 
     public void land() {

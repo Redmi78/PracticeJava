@@ -9,6 +9,7 @@ public class AustrailianTraffic implements CentralTraffic,ContinentialTraffic{
         at.yellowGo();
         ContinentialTraffic ct = new AustrailianTraffic();
         ct.TrainSymbol();
+        System.out.println(CentralTraffic.a);
     }
     @Override
     public void redGo() {
@@ -30,5 +31,9 @@ System.out.println("Yellow Slow Down");
     @Override
     public void TrainSymbol() {
         System.out.println("Train Symbol");
+    }
+
+    public void whiteGo() {
+        System.out.println("Yellow Slow Down");
     }
 }
